@@ -405,22 +405,17 @@
 					
 					<html>
 	<head>
-		<meta charset="utf-">
-		<title>Contact form</title>
-	</head>
-	<body>
-		<main>
-			<p>Send email</p>
-			<form class="contact-form" action="contactform.php" method="post">
-				<input type="text" name="name" placeholder="Full name">
-				<input type="text" name="mail" placeholder="Your email">
-				<input type="text" name="subject" placeholder="Subject">
-				<input type="text" name="message" placeholder="Message"></textarea>
-				<button type="submit" name="submit"><SEND MAIL</button>
-			</form>
-		</main>
-	</body>
-
+.grid
+  .grid__col--12
+    form#contact-form
+      label(for='inputName') Name
+      input#inputName.form__input(type='text', placeholder='Name', name='name')
+      label(for='inputEmail') Email
+      input#inputEmail.form__input(type='email', placeholder='Email', name='email')
+      label(for='inputMessage') Message
+      textarea#inputMessage.form__input(rows='3', placeholder='Your Message', name='message')
+      input.display-none(type='text', name='_gotcha')
+      input#email-submit-btn.btn--default.fill(type='submit', value='Send')
 								</div>
 							</div>
 						</form>
