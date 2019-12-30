@@ -46,11 +46,12 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+h9 {
 font-weight: 300;
     letter-spacing: 0.4px;
     font-family: "Open Sans", Sans-serif;
-    color: #232323;
+    color: #232323; 
 }
 
 p {
@@ -60,6 +61,7 @@ p {
 	line-height: 23px;
     letter-spacing: 0.2px;
     color: #797979;
+	
 }
 
 a:hover, a:focus, a:active, a.active {
@@ -235,6 +237,12 @@ header .intro-text .intro-heading {
 .section-title h2 {
     font-size: 34px;
     text-transform: uppercase;
+}
+
+.section-title h9 {
+	font-size: 34px;
+    text-transform: uppercase;
+	color: #FFFFFF;
 }
 
 .section-title p {
